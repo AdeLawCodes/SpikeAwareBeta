@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spiking Incident?"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/spike_purple"
+            android:paddingBottom="16dp"/>
+
+        <!-- STEP 1 -->
+        <TextView
+            android:text="1. Tell someone"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <TextView
+            android:text="If in a pub or club, tell the bar manager, stewards or staff."
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <!-- STEP 2 -->
+        <TextView
+            android:text="2. Stay"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Stay with them and keep talking. Do not leave them alone."
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- STEP 3 -->
+        <TextView
+            android:text="3. Call 999"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Call an ambulance if their condition deteriorates."
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- STEP 4 -->
+        <TextView
+            android:text="4. Look out"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Do not let them leave with someone they do not know or trust."
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- STEP 5 -->
+        <TextView
+            android:text="5. Evidence"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="If there is evidence (drink, powder, etc), keep it if safe to do so and give it to police or medical staff."
+            android:paddingBottom="16dp" android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <!-- STEP 6 -->
+        <TextView
+            android:text="6. Needle spiking?"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Encourage blood tests via a sexual health clinic due to infection risk."
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- STEP 7 -->
+        <TextView
+            android:text="7. Report it"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Call 101 and report the attack to the police as soon as possible."
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- STEP 8 -->
+        <TextView
+            android:text="8. Speak up"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Encourage the victim to speak to someone they trust for support."
+            android:paddingBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Back button -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_purple_square"/>
+    </LinearLayout>
+</ScrollView>

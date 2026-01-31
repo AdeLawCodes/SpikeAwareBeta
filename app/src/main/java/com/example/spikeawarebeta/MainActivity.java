@@ -60,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
 
         btnSearch.setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, SearchActivity.class)));
+
+        Button btnSpiking = findViewById(R.id.btnSpiking);
+        btnSpiking.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, SpikingIncidentActivity.class)));
+
+
     }
 
     @Override
