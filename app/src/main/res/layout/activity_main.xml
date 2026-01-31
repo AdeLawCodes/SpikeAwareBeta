@@ -67,6 +67,18 @@
             android:textColor="@android:color/white"
             android:background="@drawable/btn_purple_square" />
 
+        <Button
+            android:id="@+id/btnSpiking"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Spiking Incidents"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_purple_square"
+            android:layout_marginTop="16dp" />
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="24dp" />
