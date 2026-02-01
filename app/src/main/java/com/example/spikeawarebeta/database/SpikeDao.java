@@ -28,4 +28,11 @@ public interface SpikeDao {
 
     @Query("DELETE FROM spike_data")
     void deleteAll();
+
+    // Add inside SpikeDao interface
+    @Query("SELECT * FROM spike_data WHERE month > 0 ORDER BY year, month")
+    List<SpikeData> getMonthlyStats();
+
+    @Query("SELECT * FROM spike_data WHERE month = 0 ORDER BY year")
+    List<SpikeData> getYearlyGenderStats();
 }
