@@ -17,6 +17,12 @@ public interface SpikeDao {
     @Query("SELECT SUM(count) FROM spike_data WHERE year = :year")
     int getTotalForYear(int year);
 
+    @Query("SELECT SUM(maleCount) FROM spike_data WHERE year = :year")
+    int getMaleTotalForYear(int year);
+
+    @Query("SELECT SUM(femaleCount) FROM spike_data WHERE year = :year")
+    int getFemaleTotalForYear(int year);
+
     @Query("SELECT DISTINCT year FROM spike_data ORDER BY year DESC")
     List<Integer> getAvailableYears();
 
