@@ -64,13 +64,13 @@ public class SearchActivity extends AppCompatActivity {
         // Research resources
         allItems.add(new ResourceItem(
                 "Understanding Drink Spiking (Research, 2022)",
-                "Academic overview of substances, reporting and prevention. Keywords: spiking.",
+                "Academic overview of substances, reporting and prevention.",
                 "https://www.ncbi.nlm.nih.gov/"
         ));
 
         allItems.add(new ResourceItem(
                 "Needle Spiking Reports Summary (Research, 2023)",
-                "Summary of reports and safety discussion. Keywords: needling, spiking.",
+                "Summary of reports and safety discussion.",
                 "https://www.gov.uk/"
         ));
 
@@ -85,6 +85,12 @@ public class SearchActivity extends AppCompatActivity {
                 "Health guidance – reporting and support",
                 "General health advice and what to do after an incident.",
                 "https://www.nhs.uk/"
+        ));
+
+        allItems.add(new ResourceItem(
+                "Graph: Spiking incidents since Jan 2021",
+                "Tap to view monthly reported incident trend (2021–2025) inside the app.",
+                "__OPEN_GRAPH__"
         ));
     }
 

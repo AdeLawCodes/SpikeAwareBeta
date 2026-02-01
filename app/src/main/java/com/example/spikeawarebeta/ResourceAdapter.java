@@ -38,6 +38,12 @@ public class ResourceAdapter extends RecyclerView.Adapter<ResourceAdapter.VH> {
 
         holder.itemView.setOnClickListener(v -> {
             String url = item.url;
+
+            if ("__OPEN_GRAPH__".equals(url)) {
+                context.startActivity(new Intent(context, GraphActivity.class));
+                return;
+            }
+
             if (url == null || url.trim().isEmpty()) return;
 
             if (!url.startsWith("http://") && !url.startsWith("https://")) {
