@@ -24,7 +24,7 @@ public class DataImporter {
         executor.execute(() -> {
             List<SpikeData> list = new ArrayList<>();
             try {
-                InputStream is = context.getResources().openRawResource(R.raw.data);
+                InputStream is = context.getResources().openRawResource(R.raw.monthly_spiking);
                 BufferedReader reader = new BufferedReader(new InputStreamReader(is));
                 
                 // Skip header line
@@ -33,12 +33,13 @@ public class DataImporter {
                 String line;
                 while ((line = reader.readLine()) != null) {
                     String[] parts = line.split(",");
-                    if (parts.length >= 4) {
+                    if (parts.length >= 5) {
                         int year = Integer.parseInt(parts[0].trim());
                         int month = Integer.parseInt(parts[1].trim());
-                        int count = Integer.parseInt(parts[2].trim());
-                        String location = parts[3].trim();
-                        list.add(new SpikeData(year, month, count, location));
+                        int total = Integer.parseInt(parts[2].trim());
+                        int male = Integer.parseInt(parts[3].trim());
+                        int female = Integer.parseInt(parts[4].trim());
+                        list.add(new SpikeData(year, month, total, male, female));
                     }
                 }
                 
