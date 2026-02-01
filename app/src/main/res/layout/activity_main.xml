@@ -6,21 +6,16 @@
     <VideoView
         android:id="@+id/videoBackground"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="1013dp" />
 
-    <!-- Optional: a light white overlay so text/buttons stay readable -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#55FFFFFF" />
 
     <!-- Your normal UI on top -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:padding="24dp"
-        android:gravity="center_horizontal">
+        android:padding="24dp">
 
         <Space
             android:layout_width="match_parent"
@@ -41,17 +36,6 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <Button
-            android:id="@+id/btnContact"
-            android:layout_width="match_parent"
-            android:layout_height="69dp"
-            android:background="@drawable/btn_purple_square"
-            android:text="Contact us"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
         <Space
             android:layout_width="match_parent"
             android:layout_height="16dp" />
@@ -70,10 +54,10 @@
         <Button
             android:id="@+id/btnSpiking"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="68dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/btn_purple_square"
-            android:text="Spiking Incidents"
+            android:text="Spiking Incident : Quick Guide"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textSize="18sp"
@@ -81,7 +65,18 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="24dp" />
+            android:layout_height="17dp" />
+
+        <Button
+            android:id="@+id/btnContact"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:background="@drawable/btn_purple_square"
+            android:text="Contact us"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

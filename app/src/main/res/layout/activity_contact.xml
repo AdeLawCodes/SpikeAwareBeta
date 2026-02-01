@@ -6,20 +6,20 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="43dp"
         android:text="Contact Us"
-        android:textSize="24dp"
+        android:textSize="30dp"
         android:textStyle="bold" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="293dp"
         android:layout_height="wrap_content"
-        android:text="Email: info@spikeawareuk.org"
-        android:paddingTop="16dp"/>
+        android:paddingTop="16dp"
+        android:text="Email: info@spikeawareuk.org" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="43dp"
         android:paddingTop="8dp"
         android:text="Phone: 07368 119124" />
 
@@ -32,9 +32,9 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="55dp"
+        android:layout_height="65dp"
         android:paddingTop="8dp"
-        android:text="(independent charity)
+        android:text="(Independent charity)
 
 
 
@@ -58,7 +58,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="37dp"
+        android:layout_height="45dp"
         android:paddingTop="8dp"
         android:text="Tel - 08 08 16 89 111 (FREEPHONE)" />
 
@@ -69,9 +69,25 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="37dp"
+        android:layout_height="444dp"
         android:paddingTop="8dp"
-        android:text="Tel - 02 89 02 43 133 (FREEPHONE)" />
+        android:text="Tel - 02 89 02 43 133 (FREEPHONE)"
+
+
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_purple_square"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
 </LinearLayout>

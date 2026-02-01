@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class SearchActivity extends AppCompatActivity {
 
-    private EditText etKeywordTop, etKeywordBottom;
+    private EditText etKeywordBottom;
     private RecyclerView recyclerResults;
     private ResourceAdapter adapter;
 
@@ -27,8 +27,8 @@ public class SearchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_search);
 
         Analytics.track(this, "search_opened");
+        Analytics.track(this, "search_used");
 
-        etKeywordTop = findViewById(R.id.etKeywordTop);
         etKeywordBottom = findViewById(R.id.etKeywordBottom);
         recyclerResults = findViewById(R.id.recyclerResults);
         Button btnBack = findViewById(R.id.btnBack);
@@ -49,15 +49,12 @@ public class SearchActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 String text = s.toString();
                 // sync both fields without infinite loop
-                if (!etKeywordTop.getText().toString().equals(text)) etKeywordTop.setText(text);
                 if (!etKeywordBottom.getText().toString().equals(text)) etKeywordBottom.setText(text);
 
                 Analytics.track(SearchActivity.this, "search_used");
                 filter(text);
             }
         };
-
-        etKeywordTop.addTextChangedListener(watcher);
         etKeywordBottom.addTextChangedListener(watcher);
 
         btnBack.setOnClickListener(v -> finish());
