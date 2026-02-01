@@ -29,12 +29,12 @@
 
         <ImageView
             android:id="@+id/imgLogo"
-            android:layout_width="240dp"
-            android:layout_height="240dp"
+            android:layout_width="325dp"
+            android:layout_height="288dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/spike_logo"
             android:contentDescription="Spike Aware UK Logo"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:src="@drawable/spike_logo" />
 
         <Space
             android:layout_width="match_parent"
@@ -44,13 +44,13 @@
         <Button
             android:id="@+id/btnContact"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="69dp"
+            android:background="@drawable/btn_purple_square"
             android:text="Contact us"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            android:textStyle="bold"
             android:textColor="@android:color/white"
-            android:background="@drawable/btn_purple_square" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Space
             android:layout_width="match_parent"
@@ -59,25 +59,25 @@
         <Button
             android:id="@+id/btnSearch"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:text="Search"
+            android:layout_height="71dp"
+            android:background="@drawable/btn_purple_square"
+            android:text="Resources / Search"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            android:textStyle="bold"
             android:textColor="@android:color/white"
-            android:background="@drawable/btn_purple_square" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnSpiking"
             android:layout_width="match_parent"
             android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_purple_square"
             android:text="Spiking Incidents"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            android:textStyle="bold"
             android:textColor="@android:color/white"
-            android:background="@drawable/btn_purple_square"
-            android:layout_marginTop="16dp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Space
             android:layout_width="match_parent"

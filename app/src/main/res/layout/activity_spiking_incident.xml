@@ -115,13 +115,15 @@
             android:textSize="18sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <TextView
-            android:text="Encourage the victim to speak to someone they trust for support."
-            android:paddingBottom="32dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
         <!-- Back button -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp"
+            android:text="Encourage the victim to speak to someone they trust for support." />
+
         <Button
             android:id="@+id/btnBack"
             android:layout_width="match_parent"

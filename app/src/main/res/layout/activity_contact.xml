@@ -5,11 +5,11 @@
     android:padding="24dp">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Contact Us"
-        android:textSize="22sp"
-        android:textStyle="bold"/>
+        android:textSize="24dp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,6 +20,58 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phone: 07368 119124"
-        android:paddingTop="8dp"/>
+        android:paddingTop="8dp"
+        android:text="Phone: 07368 119124" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Victim Support UK"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:paddingTop="8dp"
+        android:text="(independent charity)
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Tel - 08 08 16 89 111 (FREEPHONE)" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Victim Support Scotland"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:paddingTop="8dp"
+        android:text="Tel - 08 08 16 89 111 (FREEPHONE)" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Victim Support NI"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:paddingTop="8dp"
+        android:text="Tel - 02 89 02 43 133 (FREEPHONE)" />
 </LinearLayout>
