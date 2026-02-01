@@ -8,17 +8,17 @@ public class SpikeData {
     @PrimaryKey(autoGenerate = true)
     public int id;
 
-    public long timestamp; // Specific time if available
-    public int year;       // For easy filtering
-    public int month;      // 1-12, for charting months
-    public int count;      // Number of incidents in this record
-    public String location; // Optional: City or Venue category
+    public int year;
+    public int month;
+    public int count;
+    public int maleCount;
+    public int femaleCount;
 
-    public SpikeData(int year, int month, int count, String location) {
+    public SpikeData(int year, int month, int count, int maleCount, int femaleCount) {
         this.year = year;
         this.month = month;
         this.count = count;
-        this.location = location;
-        // Optional: you could also calculate a rough timestamp here
+        this.maleCount = maleCount;
+        this.femaleCount = femaleCount;
     }
 }
